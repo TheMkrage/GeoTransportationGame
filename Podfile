@@ -8,5 +8,5 @@ target 'GeoTransportationGame' do
   # Pods for GeoTransportationGame
   pod "Anchorage"
   pod "Alamofire"
-
+  pod "MapKitGoogleStyler"
 end

@@ -19,6 +19,7 @@
 		7E678144238F7EF20026DA22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E678142238F7EF20026DA22 /* LaunchScreen.storyboard */; };
 		7E67814C239049700026DA22 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E67814B2390496F0026DA22 /* MapKit.framework */; };
 		7E67814E239049D30026DA22 /* MainViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67814D239049D30026DA22 /* MainViewController+Constraints.swift */; };
+		7E67815023906AB20026DA22 /* overlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E67814F23906AB20026DA22 /* overlay.json */; };
 		85C40F1AF22CFA0C0F177F61 /* MainInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88BA50A5A4DA117FBC78BB /* MainInteractorInput.swift */; };
 		A8325A793B68DB4E4FBA840C /* MainInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF52CE2BD4D25DA8B910956D /* MainInitializer.swift */; };
 		BACCC626A5A5FAD824EAB061 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52129BC5F6D8A124133E32C /* MainViewController.swift */; };
@@ -44,6 +45,7 @@
 		7E678145238F7EF20026DA22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E67814B2390496F0026DA22 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7E67814D239049D30026DA22 /* MainViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MainViewController+Constraints.swift"; path = "GeoTransportationGame/Classes/Modules/main/View/MainViewController+Constraints.swift"; sourceTree = SOURCE_ROOT; };
+		7E67814F23906AB20026DA22 /* overlay.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = overlay.json; sourceTree = "<group>"; };
 		ADCB0FEC320182370B4BD463 /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
 		AF52CE2BD4D25DA8B910956D /* MainInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInitializer.swift; sourceTree = "<group>"; };
 		CC01135D184EC2FEA9342DBC /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				7E678140238F7EF20026DA22 /* Assets.xcassets */,
 				7E678142238F7EF20026DA22 /* LaunchScreen.storyboard */,
 				7E678145238F7EF20026DA22 /* Info.plist */,
+				7E67814F23906AB20026DA22 /* overlay.json */,
 				91EE4275DFAFA677A151B3C7 /* Classes */,
 			);
 			path = GeoTransportationGame;
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E678144238F7EF20026DA22 /* LaunchScreen.storyboard in Resources */,
+				7E67815023906AB20026DA22 /* overlay.json in Resources */,
 				7E678141238F7EF20026DA22 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,11 +273,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-GeoTransportationGame/Pods-GeoTransportationGame-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Anchorage/Anchorage.framework",
+				"${BUILT_PRODUCTS_DIR}/MapKitGoogleStyler/MapKitGoogleStyler.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapKitGoogleStyler.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
