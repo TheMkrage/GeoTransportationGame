@@ -7,69 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		088F377EA76FBEBAE6D56AEE /* mapRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D9544806BE043419883F37 /* mapRouter.m */; };
-		1122821D9949AD594F087B0F /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA595FC32D30286C0EA3ED50 /* MapViewController.m */; };
-		2B9B024C1F346C75282DC6EC /* mapAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4350179F77CC06A7A1809B /* mapAssembly.m */; };
-		41F00101B1EE53B214C5AE1E /* MapAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC3550D5873DC78B01BB625 /* MapAssembly.m */; };
+		1EC1BA9A75ED49DC5B921033 /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BEDBA1385F9EF083FFCE57 /* MainModuleInput.swift */; };
+		3657E753F373D630421CB2B3 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19D21E5AB0AECAF18ED4BB /* MainRouter.swift */; };
+		444C9AAFEB7D82B162A289F5 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55AB1E0B220C70DEAB6467 /* MainConfigurator.swift */; };
 		533E4F6C659D572599D3A89D /* Pods_GeoTransportationGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3657AEE0053D156712C5FD6B /* Pods_GeoTransportationGame.framework */; };
-		5781F8746BCC08D1A81BE2B0 /* MapPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 858DAF28C13DAE7473A77DB4 /* MapPresenter.m */; };
-		751464F05199D87B62127A67 /* mapPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D8C154154D00C9E39BEA9 /* mapPresenter.m */; };
+		68CC641B13FA8D056FE7F224 /* MainRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6CAD7D91F88BD9BF56EF6C /* MainRouterInput.swift */; };
+		7C4B7AF3B2805549564C95F2 /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F1AEAA34A02E32DEBE651D /* MainViewInput.swift */; };
 		7E678138238F7EEF0026DA22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E678137238F7EEF0026DA22 /* AppDelegate.swift */; };
 		7E67813A238F7EEF0026DA22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E678139238F7EEF0026DA22 /* SceneDelegate.swift */; };
-		7E67813C238F7EEF0026DA22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67813B238F7EEF0026DA22 /* ViewController.swift */; };
-		7E67813F238F7EEF0026DA22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E67813D238F7EEF0026DA22 /* Main.storyboard */; };
 		7E678141238F7EF20026DA22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E678140238F7EF20026DA22 /* Assets.xcassets */; };
 		7E678144238F7EF20026DA22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E678142238F7EF20026DA22 /* LaunchScreen.storyboard */; };
-		9EDEE2B079C59F01F82ADE51 /* mapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D3A314E75F49E12C2C3536 /* mapViewController.m */; };
-		9FC1EABFB9947D2D0315A9FA /* MapInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DDF8271D710463DC6A43A1 /* MapInteractor.m */; };
-		C2C3CB5A0422C58FF7BAB01D /* mapInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B56E4939BDC93C59FF21FB6B /* mapInteractor.m */; };
-		CDD38E126DA70445D958FBA4 /* MapRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5889CE0BCBDC872F8A2ACC /* MapRouter.m */; };
+		7E67814C239049700026DA22 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E67814B2390496F0026DA22 /* MapKit.framework */; };
+		7E67814E239049D30026DA22 /* MainViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67814D239049D30026DA22 /* MainViewController+Constraints.swift */; };
+		85C40F1AF22CFA0C0F177F61 /* MainInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88BA50A5A4DA117FBC78BB /* MainInteractorInput.swift */; };
+		A8325A793B68DB4E4FBA840C /* MainInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF52CE2BD4D25DA8B910956D /* MainInitializer.swift */; };
+		BACCC626A5A5FAD824EAB061 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52129BC5F6D8A124133E32C /* MainViewController.swift */; };
+		D008A82162F033BD1914A426 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A68B43CECB1B52CEC8A1863 /* MainInteractor.swift */; };
+		D3A0C45227EAADC169F8DDDF /* MainViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB0FEC320182370B4BD463 /* MainViewOutput.swift */; };
+		F973DC241917EEFFE60DF133 /* MainInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F48DF9AB67519C2B57FE182 /* MainInteractorOutput.swift */; };
+		FD042937C62902BCE38A3F3D /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC01135D184EC2FEA9342DBC /* MainPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		038660983B4244DFB7C16546 /* MapRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MapRouterInput.h; sourceTree = "<group>"; };
-		0386F8324D6E7B84E33C1D1D /* mapInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mapInteractorOutput.h; sourceTree = "<group>"; };
-		104F3885CDCCA7526D519496 /* mapViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mapViewOutput.h; sourceTree = "<group>"; };
-		1CF824D35321A4668A1B071B /* MapPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MapPresenter.h; sourceTree = "<group>"; };
-		29122C89E26A297FDBE60E01 /* mapInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mapInteractor.h; sourceTree = "<group>"; };
-		2CD7EFAFD8D187C3D57CF1D2 /* mapRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mapRouter.h; sourceTree = "<group>"; };
+		2A68B43CECB1B52CEC8A1863 /* MainInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		3657AEE0053D156712C5FD6B /* Pods_GeoTransportationGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoTransportationGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		36DC0FFD2EC0D59026D326F4 /* MapModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MapModuleInput.h; sourceTree = "<group>"; };
-		39F4CEC06101733998D1EC85 /* MapRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MapRouter.h; sourceTree = "<group>"; };
-		3CFA643D9C5DB4548F1A77FE /* MapInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MapInteractor.h; sourceTree = "<group>"; };
-		41DDF8271D710463DC6A43A1 /* MapInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MapInteractor.m; sourceTree = "<group>"; };
-		495D8C154154D00C9E39BEA9 /* mapPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = mapPresenter.m; sourceTree = "<group>"; };
-		4E0352E28A0BD0E4EA0F20F1 /* mapViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mapViewController.h; sourceTree = "<group>"; };
-		59D9544806BE043419883F37 /* mapRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = mapRouter.m; sourceTree = "<group>"; };
-		5C96296BD941FC3B76EA9DC7 /* MapViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MapViewOutput.h; sourceTree = "<group>"; };
+		3C6CAD7D91F88BD9BF56EF6C /* MainRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouterInput.swift; sourceTree = "<group>"; };
+		3F48DF9AB67519C2B57FE182 /* MainInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractorOutput.swift; sourceTree = "<group>"; };
+		5E55AB1E0B220C70DEAB6467 /* MainConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		628C7426060D4D33F55E03D0 /* Pods-GeoTransportationGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoTransportationGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoTransportationGame/Pods-GeoTransportationGame.debug.xcconfig"; sourceTree = "<group>"; };
-		6A5889CE0BCBDC872F8A2ACC /* MapRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MapRouter.m; sourceTree = "<group>"; };
-		721665EA78BC8989DF670D29 /* mapAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mapAssembly.h; sourceTree = "<group>"; };
-		764511A8C653942E9025010D /* mapModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mapModuleInput.h; sourceTree = "<group>"; };
+		68F1AEAA34A02E32DEBE651D /* MainViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewInput.swift; sourceTree = "<group>"; };
 		7E678134238F7EEF0026DA22 /* GeoTransportationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTransportationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E678137238F7EEF0026DA22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E678139238F7EEF0026DA22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7E67813B238F7EEF0026DA22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7E67813E238F7EEF0026DA22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E678140238F7EF20026DA22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E678143238F7EF20026DA22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E678145238F7EF20026DA22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		858DAF28C13DAE7473A77DB4 /* MapPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MapPresenter.m; sourceTree = "<group>"; };
-		8E730580F7ACE46D711072AA /* MapViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MapViewInput.h; sourceTree = "<group>"; };
-		9B666134C27EAAC588039EB2 /* MapAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MapAssembly.h; sourceTree = "<group>"; };
-		A4ACEEDAD3C2F03624FD4E5C /* mapViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mapViewInput.h; sourceTree = "<group>"; };
-		B0556FE82AD8FD5A58159FC4 /* mapInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mapInteractorInput.h; sourceTree = "<group>"; };
-		B56E4939BDC93C59FF21FB6B /* mapInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = mapInteractor.m; sourceTree = "<group>"; };
-		CA595FC32D30286C0EA3ED50 /* MapViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		D100F8CC4437E8B9667FB793 /* MapInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MapInteractorOutput.h; sourceTree = "<group>"; };
-		D317E91E1B14A981DD191DFE /* mapPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mapPresenter.h; sourceTree = "<group>"; };
-		DB4350179F77CC06A7A1809B /* mapAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = mapAssembly.m; sourceTree = "<group>"; };
-		DCE762459DD6CDD5332BF224 /* mapRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mapRouterInput.h; sourceTree = "<group>"; };
+		7E67814B2390496F0026DA22 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7E67814D239049D30026DA22 /* MainViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MainViewController+Constraints.swift"; path = "GeoTransportationGame/Classes/Modules/main/View/MainViewController+Constraints.swift"; sourceTree = SOURCE_ROOT; };
+		ADCB0FEC320182370B4BD463 /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
+		AF52CE2BD4D25DA8B910956D /* MainInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInitializer.swift; sourceTree = "<group>"; };
+		CC01135D184EC2FEA9342DBC /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		CC19D21E5AB0AECAF18ED4BB /* MainRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		DE85CBD3387EF487D8C75F32 /* Pods-GeoTransportationGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoTransportationGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoTransportationGame/Pods-GeoTransportationGame.release.xcconfig"; sourceTree = "<group>"; };
-		DEC3550D5873DC78B01BB625 /* MapAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MapAssembly.m; sourceTree = "<group>"; };
-		E1D3A314E75F49E12C2C3536 /* mapViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = mapViewController.m; sourceTree = "<group>"; };
-		E68BCB6FE83E50039A61D6C7 /* MapInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MapInteractorInput.h; sourceTree = "<group>"; };
-		FCAA358CB72801E9A19B55ED /* MapViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		E8BEDBA1385F9EF083FFCE57 /* MainModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleInput.swift; sourceTree = "<group>"; };
+		F52129BC5F6D8A124133E32C /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FB88BA50A5A4DA117FBC78BB /* MainInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractorInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E67814C239049700026DA22 /* MapKit.framework in Frameworks */,
 				533E4F6C659D572599D3A89D /* Pods_GeoTransportationGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,75 +67,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AE3B5681C81844CC2555CE1 /* View */ = {
+		169C863FC64F48AC34B3FF6D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A4ACEEDAD3C2F03624FD4E5C /* mapViewInput.h */,
-				104F3885CDCCA7526D519496 /* mapViewOutput.h */,
-				4E0352E28A0BD0E4EA0F20F1 /* mapViewController.h */,
-				E1D3A314E75F49E12C2C3536 /* mapViewController.m */,
+				190CEB3420C9277DCF0D7D07 /* Main */,
 			);
-			name = View;
-			path = View;
-			sourceTree = "<group>";
-		};
-		10390879FCA6C131FE4A9745 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				F5B2031CA5ADCCB9934E3810 /* map */,
-			);
-			name = Modules;
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		4D4D874532D94EB173C61858 /* Router */ = {
+		190CEB3420C9277DCF0D7D07 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				DCE762459DD6CDD5332BF224 /* mapRouterInput.h */,
-				2CD7EFAFD8D187C3D57CF1D2 /* mapRouter.h */,
-				59D9544806BE043419883F37 /* mapRouter.m */,
+				8E57239E02B85D95BF1E0C36 /* View */,
+				88D7C84B5417C5F408E6BD96 /* Presenter */,
+				74EA6216BE7013A6B9BAFA14 /* Interactor */,
+				6E918593C11FFA0B4257724F /* Router */,
+				7187C1E586B31E27A917E36C /* Configurator */,
 			);
-			name = Router;
-			path = Router;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		511A58014EB6E21644D3321A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E67814B2390496F0026DA22 /* MapKit.framework */,
 				3657AEE0053D156712C5FD6B /* Pods_GeoTransportationGame.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		58FAE0D08A557177155AE70B /* Router */ = {
+		6E918593C11FFA0B4257724F /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				038660983B4244DFB7C16546 /* MapRouterInput.h */,
-				39F4CEC06101733998D1EC85 /* MapRouter.h */,
-				6A5889CE0BCBDC872F8A2ACC /* MapRouter.m */,
+				3C6CAD7D91F88BD9BF56EF6C /* MainRouterInput.swift */,
+				CC19D21E5AB0AECAF18ED4BB /* MainRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
-		6121376CCB69C76D49832925 /* Classes */ = {
+		7187C1E586B31E27A917E36C /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				10390879FCA6C131FE4A9745 /* Modules */,
+				5E55AB1E0B220C70DEAB6467 /* MainConfigurator.swift */,
+				AF52CE2BD4D25DA8B910956D /* MainInitializer.swift */,
 			);
-			name = Classes;
-			path = Classes;
+			path = Configurator;
 			sourceTree = "<group>";
 		};
-		7899A41E8D197E2A45DBE396 /* Interactor */ = {
+		74EA6216BE7013A6B9BAFA14 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				E68BCB6FE83E50039A61D6C7 /* MapInteractorInput.h */,
-				D100F8CC4437E8B9667FB793 /* MapInteractorOutput.h */,
-				3CFA643D9C5DB4548F1A77FE /* MapInteractor.h */,
-				41DDF8271D710463DC6A43A1 /* MapInteractor.m */,
+				FB88BA50A5A4DA117FBC78BB /* MainInteractorInput.swift */,
+				3F48DF9AB67519C2B57FE182 /* MainInteractorOutput.swift */,
+				2A68B43CECB1B52CEC8A1863 /* MainInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -179,13 +147,10 @@
 			children = (
 				7E678137238F7EEF0026DA22 /* AppDelegate.swift */,
 				7E678139238F7EEF0026DA22 /* SceneDelegate.swift */,
-				7E67813B238F7EEF0026DA22 /* ViewController.swift */,
-				7E67813D238F7EEF0026DA22 /* Main.storyboard */,
 				7E678140238F7EF20026DA22 /* Assets.xcassets */,
 				7E678142238F7EF20026DA22 /* LaunchScreen.storyboard */,
 				7E678145238F7EF20026DA22 /* Info.plist */,
-				C54CD3CED0E662522295258E /* Map */,
-				6121376CCB69C76D49832925 /* Classes */,
+				91EE4275DFAFA677A151B3C7 /* Classes */,
 			);
 			path = GeoTransportationGame;
 			sourceTree = "<group>";
@@ -199,96 +164,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9540D7FB213F0931951E41D2 /* Interactor */ = {
+		88D7C84B5417C5F408E6BD96 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				B0556FE82AD8FD5A58159FC4 /* mapInteractorInput.h */,
-				0386F8324D6E7B84E33C1D1D /* mapInteractorOutput.h */,
-				29122C89E26A297FDBE60E01 /* mapInteractor.h */,
-				B56E4939BDC93C59FF21FB6B /* mapInteractor.m */,
+				E8BEDBA1385F9EF083FFCE57 /* MainModuleInput.swift */,
+				CC01135D184EC2FEA9342DBC /* MainPresenter.swift */,
 			);
-			name = Interactor;
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		A4E0134EC23B3CF050C053C3 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				36DC0FFD2EC0D59026D326F4 /* MapModuleInput.h */,
-				1CF824D35321A4668A1B071B /* MapPresenter.h */,
-				858DAF28C13DAE7473A77DB4 /* MapPresenter.m */,
-			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		AC78D4D1ABC86E11F6A48914 /* Assembly */ = {
+		8E57239E02B85D95BF1E0C36 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				721665EA78BC8989DF670D29 /* mapAssembly.h */,
-				DB4350179F77CC06A7A1809B /* mapAssembly.m */,
+				68F1AEAA34A02E32DEBE651D /* MainViewInput.swift */,
+				ADCB0FEC320182370B4BD463 /* MainViewOutput.swift */,
+				F52129BC5F6D8A124133E32C /* MainViewController.swift */,
+				7E67814D239049D30026DA22 /* MainViewController+Constraints.swift */,
 			);
-			name = Assembly;
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		C54CD3CED0E662522295258E /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				D773E5D87FA7CEAB4DAD2A84 /* Assembly */,
-				D7862A8635FEAA2635519EBE /* View */,
-				A4E0134EC23B3CF050C053C3 /* Presenter */,
-				7899A41E8D197E2A45DBE396 /* Interactor */,
-				58FAE0D08A557177155AE70B /* Router */,
-			);
-			name = Map;
-			path = Map;
-			sourceTree = SOURCE_ROOT;
-		};
-		CC48D87641C2F08F19018873 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				764511A8C653942E9025010D /* mapModuleInput.h */,
-				D317E91E1B14A981DD191DFE /* mapPresenter.h */,
-				495D8C154154D00C9E39BEA9 /* mapPresenter.m */,
-			);
-			name = Presenter;
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		D773E5D87FA7CEAB4DAD2A84 /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				9B666134C27EAAC588039EB2 /* MapAssembly.h */,
-				DEC3550D5873DC78B01BB625 /* MapAssembly.m */,
-			);
-			name = Assembly;
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		D7862A8635FEAA2635519EBE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8E730580F7ACE46D711072AA /* MapViewInput.h */,
-				5C96296BD941FC3B76EA9DC7 /* MapViewOutput.h */,
-				FCAA358CB72801E9A19B55ED /* MapViewController.h */,
-				CA595FC32D30286C0EA3ED50 /* MapViewController.m */,
-			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
-		F5B2031CA5ADCCB9934E3810 /* map */ = {
+		91EE4275DFAFA677A151B3C7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AC78D4D1ABC86E11F6A48914 /* Assembly */,
-				0AE3B5681C81844CC2555CE1 /* View */,
-				CC48D87641C2F08F19018873 /* Presenter */,
-				9540D7FB213F0931951E41D2 /* Interactor */,
-				4D4D874532D94EB173C61858 /* Router */,
+				169C863FC64F48AC34B3FF6D /* Modules */,
 			);
-			name = map;
-			path = map;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +203,7 @@
 				7E678130238F7EEF0026DA22 /* Sources */,
 				7E678131238F7EEF0026DA22 /* Frameworks */,
 				7E678132238F7EEF0026DA22 /* Resources */,
+				0B1388B82EB7C2B001D5BADF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -352,13 +254,32 @@
 			files = (
 				7E678144238F7EF20026DA22 /* LaunchScreen.storyboard in Resources */,
 				7E678141238F7EF20026DA22 /* Assets.xcassets in Resources */,
-				7E67813F238F7EEF0026DA22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B1388B82EB7C2B001D5BADF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GeoTransportationGame/Pods-GeoTransportationGame-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Anchorage/Anchorage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchorage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoTransportationGame/Pods-GeoTransportationGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DC70E544BABAFCCFD8DDFE73 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,33 +305,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E67813C238F7EEF0026DA22 /* ViewController.swift in Sources */,
 				7E678138238F7EEF0026DA22 /* AppDelegate.swift in Sources */,
 				7E67813A238F7EEF0026DA22 /* SceneDelegate.swift in Sources */,
-				41F00101B1EE53B214C5AE1E /* MapAssembly.m in Sources */,
-				1122821D9949AD594F087B0F /* MapViewController.m in Sources */,
-				5781F8746BCC08D1A81BE2B0 /* MapPresenter.m in Sources */,
-				9FC1EABFB9947D2D0315A9FA /* MapInteractor.m in Sources */,
-				CDD38E126DA70445D958FBA4 /* MapRouter.m in Sources */,
-				2B9B024C1F346C75282DC6EC /* mapAssembly.m in Sources */,
-				9EDEE2B079C59F01F82ADE51 /* mapViewController.m in Sources */,
-				751464F05199D87B62127A67 /* mapPresenter.m in Sources */,
-				C2C3CB5A0422C58FF7BAB01D /* mapInteractor.m in Sources */,
-				088F377EA76FBEBAE6D56AEE /* mapRouter.m in Sources */,
+				7C4B7AF3B2805549564C95F2 /* MainViewInput.swift in Sources */,
+				D3A0C45227EAADC169F8DDDF /* MainViewOutput.swift in Sources */,
+				BACCC626A5A5FAD824EAB061 /* MainViewController.swift in Sources */,
+				7E67814E239049D30026DA22 /* MainViewController+Constraints.swift in Sources */,
+				1EC1BA9A75ED49DC5B921033 /* MainModuleInput.swift in Sources */,
+				FD042937C62902BCE38A3F3D /* MainPresenter.swift in Sources */,
+				85C40F1AF22CFA0C0F177F61 /* MainInteractorInput.swift in Sources */,
+				F973DC241917EEFFE60DF133 /* MainInteractorOutput.swift in Sources */,
+				D008A82162F033BD1914A426 /* MainInteractor.swift in Sources */,
+				68CC641B13FA8D056FE7F224 /* MainRouterInput.swift in Sources */,
+				3657E753F373D630421CB2B3 /* MainRouter.swift in Sources */,
+				444C9AAFEB7D82B162A289F5 /* MainConfigurator.swift in Sources */,
+				A8325A793B68DB4E4FBA840C /* MainInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7E67813D238F7EEF0026DA22 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E67813E238F7EEF0026DA22 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7E678142238F7EF20026DA22 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

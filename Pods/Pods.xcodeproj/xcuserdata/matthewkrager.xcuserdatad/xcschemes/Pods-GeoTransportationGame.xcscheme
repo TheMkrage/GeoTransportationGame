@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1120"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD20EEA0F55272661C6EE1F24D6BA376"
+               BlueprintIdentifier = "87D3DCDFA4DCB64F444CD9651D65C122"
                BuildableName = "Pods_GeoTransportationGame.framework"
                BlueprintName = "Pods-GeoTransportationGame"
                ReferencedContainer = "container:Pods.xcodeproj">

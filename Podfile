@@ -6,5 +6,7 @@ target 'GeoTransportationGame' do
   use_frameworks!
 
   # Pods for GeoTransportationGame
+  pod "Anchorage"
+  pod "Alamofire"
 
 end

@@ -1,13 +1,13 @@
 //
-//  mapRouterInput.h
+//  MainMainInteractor.swift
 //  GeoTransportationGame
 //
 //  Created by Matthew Krager on 27/11/2019.
 //  Copyright © 2019 Krager. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+class MainInteractor: MainInteractorInput {
 
-@protocol mapRouterInput <NSObject>
+    weak var output: MainInteractorOutput!
 
-@end
+}
