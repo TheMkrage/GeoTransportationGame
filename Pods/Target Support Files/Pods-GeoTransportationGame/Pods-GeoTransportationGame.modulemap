@@ -1,0 +1,6 @@
+framework module Pods_GeoTransportationGame {
+  umbrella header "Pods-GeoTransportationGame-umbrella.h"
+
+  export *
+  module * { export * }
+}
