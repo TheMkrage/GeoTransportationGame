@@ -263,10 +263,10 @@
 			children = (
 				7E5742D62390CEEB00BAD750 /* StationAnnotation.swift */,
 				7E5742E223919AB100BAD750 /* StationAnnotations */,
-				7E6781572390BE590026DA22 /* ConnectionOverlayRenderer.swift */,
-				7E5742DF2390F72A00BAD750 /* ConnectionOverlayRenderers */,
 				7E5742D82390DB6500BAD750 /* ConnectionOverlay.swift */,
 				7E5742F12391B41500BAD750 /* ConnectionOverlays */,
+				7E6781572390BE590026DA22 /* ConnectionOverlayRenderer.swift */,
+				7E5742DF2390F72A00BAD750 /* ConnectionOverlayRenderers */,
 			);
 			path = Maps;
 			sourceTree = "<group>";

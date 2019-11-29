@@ -13,4 +13,8 @@ extension CLLocationCoordinate2D {
     var cgPoint: CGPoint {
         return CGPoint(x: self.latitude, y: self.longitude)
     }
+    
+    func translate(deltaLat: CLLocationDegrees, deltaLong: CLLocationDegrees) -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: latitude + deltaLat, longitude: longitude + deltaLong)
+    }
 }

@@ -19,8 +19,9 @@ class BusConnectionOverlayRenderer: ConnectionOverlayRenderer {
 
     override func createPath() {
         let path = CGMutablePath()
-        let point1 = self.point(for: MKMapPoint(connectionOverlay.connection.station1.coordinate))
-        let point2 = self.point(for: MKMapPoint(connectionOverlay.connection.station2.coordinate))
+        
+        let point1 = self.point(for: MKMapPoint(connectionOverlay.connection.station1.coordinate.translate(deltaLat: 0, deltaLong: 0.0001)))
+        let point2 = self.point(for: MKMapPoint(connectionOverlay.connection.station2.coordinate.translate(deltaLat: 0, deltaLong: 0.0001)))
         path.move(to: point1)
         path.addLine(to: point2)
         self.path = path
