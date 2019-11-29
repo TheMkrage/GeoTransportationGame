@@ -17,6 +17,10 @@
 		7E5742D92390DB6500BAD750 /* ConnectionOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742D82390DB6500BAD750 /* ConnectionOverlay.swift */; };
 		7E5742DC2390DDBD00BAD750 /* MKMapRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742DB2390DDBD00BAD750 /* MKMapRect+Extension.swift */; };
 		7E5742DE2390E3C900BAD750 /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742DD2390E3C900BAD750 /* CLLocationCoordinate2D+Extension.swift */; };
+		7E5742E123919A8600BAD750 /* BusConnectionOverlayRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742E023919A8600BAD750 /* BusConnectionOverlayRenderer.swift */; };
+		7E5742E423919AD500BAD750 /* BusStopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742E323919AD500BAD750 /* BusStopAnnotation.swift */; };
+		7E5742E623919BE400BAD750 /* ConnectionOverlayRendererFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742E523919BE400BAD750 /* ConnectionOverlayRendererFactory.swift */; };
+		7E5742E823919CC200BAD750 /* StationAnnotationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742E723919CC200BAD750 /* StationAnnotationFactory.swift */; };
 		7E678138238F7EEF0026DA22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E678137238F7EEF0026DA22 /* AppDelegate.swift */; };
 		7E67813A238F7EEF0026DA22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E678139238F7EEF0026DA22 /* SceneDelegate.swift */; };
 		7E678141238F7EF20026DA22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E678140238F7EF20026DA22 /* Assets.xcassets */; };
@@ -49,6 +53,10 @@
 		7E5742D82390DB6500BAD750 /* ConnectionOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionOverlay.swift; sourceTree = "<group>"; };
 		7E5742DB2390DDBD00BAD750 /* MKMapRect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapRect+Extension.swift"; sourceTree = "<group>"; };
 		7E5742DD2390E3C900BAD750 /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
+		7E5742E023919A8600BAD750 /* BusConnectionOverlayRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusConnectionOverlayRenderer.swift; sourceTree = "<group>"; };
+		7E5742E323919AD500BAD750 /* BusStopAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopAnnotation.swift; sourceTree = "<group>"; };
+		7E5742E523919BE400BAD750 /* ConnectionOverlayRendererFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionOverlayRendererFactory.swift; sourceTree = "<group>"; };
+		7E5742E723919CC200BAD750 /* StationAnnotationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotationFactory.swift; sourceTree = "<group>"; };
 		7E678134238F7EEF0026DA22 /* GeoTransportationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTransportationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E678137238F7EEF0026DA22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E678139238F7EEF0026DA22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +68,7 @@
 		7E67814F23906AB20026DA22 /* overlay.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = overlay.json; sourceTree = "<group>"; };
 		7E678152239077FC0026DA22 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapView.swift; path = GeoTransportationGame/Classes/Modules/main/View/Subviews/MapView.swift; sourceTree = SOURCE_ROOT; };
 		7E67815523907D270026DA22 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
-		7E6781572390BE590026DA22 /* ConnectionOverlayRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionOverlayRenderer.swift; sourceTree = "<group>"; };
+		7E6781572390BE590026DA22 /* ConnectionOverlayRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConnectionOverlayRenderer.swift; path = StationAnnotations/ConnectionOverlayRenderer.swift; sourceTree = "<group>"; };
 		7E951A882390C671004BEB6C /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		ADCB0FEC320182370B4BD463 /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
 		AF52CE2BD4D25DA8B910956D /* MainInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInitializer.swift; sourceTree = "<group>"; };
@@ -151,6 +159,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		7E5742DF2390F72A00BAD750 /* ConnectionOverlayRenderers */ = {
+			isa = PBXGroup;
+			children = (
+				7E5742E023919A8600BAD750 /* BusConnectionOverlayRenderer.swift */,
+				7E5742E523919BE400BAD750 /* ConnectionOverlayRendererFactory.swift */,
+			);
+			path = ConnectionOverlayRenderers;
+			sourceTree = "<group>";
+		};
+		7E5742E223919AB100BAD750 /* StationAnnotations */ = {
+			isa = PBXGroup;
+			children = (
+				7E5742E323919AD500BAD750 /* BusStopAnnotation.swift */,
+				7E5742E723919CC200BAD750 /* StationAnnotationFactory.swift */,
+			);
+			path = StationAnnotations;
+			sourceTree = "<group>";
+		};
 		7E67812B238F7EEF0026DA22 = {
 			isa = PBXGroup;
 			children = (
@@ -204,8 +230,10 @@
 		7E951A8A2390C78D004BEB6C /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				7E6781572390BE590026DA22 /* ConnectionOverlayRenderer.swift */,
 				7E5742D62390CEEB00BAD750 /* StationAnnotation.swift */,
+				7E5742E223919AB100BAD750 /* StationAnnotations */,
+				7E6781572390BE590026DA22 /* ConnectionOverlayRenderer.swift */,
+				7E5742DF2390F72A00BAD750 /* ConnectionOverlayRenderers */,
 				7E5742D82390DB6500BAD750 /* ConnectionOverlay.swift */,
 			);
 			path = Maps;
@@ -369,8 +397,10 @@
 			files = (
 				7E678138238F7EEF0026DA22 /* AppDelegate.swift in Sources */,
 				7E6781582390BE5A0026DA22 /* ConnectionOverlayRenderer.swift in Sources */,
+				7E5742E423919AD500BAD750 /* BusStopAnnotation.swift in Sources */,
 				7E678153239077FC0026DA22 /* MapView.swift in Sources */,
 				7E67813A238F7EEF0026DA22 /* SceneDelegate.swift in Sources */,
+				7E5742E623919BE400BAD750 /* ConnectionOverlayRendererFactory.swift in Sources */,
 				7C4B7AF3B2805549564C95F2 /* MainViewInput.swift in Sources */,
 				D3A0C45227EAADC169F8DDDF /* MainViewOutput.swift in Sources */,
 				BACCC626A5A5FAD824EAB061 /* MainViewController.swift in Sources */,
@@ -388,7 +418,9 @@
 				3657E753F373D630421CB2B3 /* MainRouter.swift in Sources */,
 				7E5742D92390DB6500BAD750 /* ConnectionOverlay.swift in Sources */,
 				444C9AAFEB7D82B162A289F5 /* MainConfigurator.swift in Sources */,
+				7E5742E823919CC200BAD750 /* StationAnnotationFactory.swift in Sources */,
 				7E67815623907D270026DA22 /* Station.swift in Sources */,
+				7E5742E123919A8600BAD750 /* BusConnectionOverlayRenderer.swift in Sources */,
 				A8325A793B68DB4E4FBA840C /* MainInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

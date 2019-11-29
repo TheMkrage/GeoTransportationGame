@@ -1,39 +1,20 @@
 //
-//  ConnectionOverlayRenderer.swift
+//  BusOverlayRenderer.swift
 //  GeoTransportationGame
 //
-//  Created by Matthew Krager on 11/28/19.
+//  Created by Matthew Krager on 11/29/19.
 //  Copyright © 2019 Matthew Krager. All rights reserved.
 //
 
-import MapKit
 import UIKit
-import CoreGraphics
+import MapKit
 
-class ConnectionOverlayRenderer: MKOverlayPathRenderer {
-
-    var connectionOverlay: ConnectionOverlay
-
-    init(connectionOverlay: ConnectionOverlay) {
-        self.connectionOverlay = connectionOverlay
-        super.init(overlay: connectionOverlay)
-    }
-
+class BusConnectionOverlayRenderer: ConnectionOverlayRenderer {
     override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGContext) {
         context.setStrokeColor(UIColor.black.cgColor)
         context.setLineWidth(50.0)
         context.addPath(self.path)
         context.strokePath()
-        
-//        let rect = self.rect(for: overlay.boundingMapRect)
-//
-//        print(mapRect)
-//        print(zoomScale)
-//        print(overlay.boundingMapRect)
-//        print(rect)
-//        print(self.path)
-//        context.addRect(rect)
-//        context.fill(rect)
     }
 
     override func createPath() {

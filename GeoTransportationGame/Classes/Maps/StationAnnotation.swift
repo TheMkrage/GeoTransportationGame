@@ -9,9 +9,10 @@
 import MapKit
 
 class StationAnnotation: MKPointAnnotation {
-    var type: StationType
+    var station: Station
     
-    init(type: StationType) {
-        self.type = type
+    init(station: Station) {
+        self.station = station
+        self.coordinate = station.coordinate
     }
 }

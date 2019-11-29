@@ -41,8 +41,7 @@ class MainViewController: UIViewController, MainViewInput {
     func displayStations(stations: [Station]) {
         var annotations = [StationAnnotation]()
         for s in stations {
-            let a = StationAnnotation(type: s.type)
-            a.coordinate = CLLocationCoordinate2D(latitude: s.lat, longitude: s.long)
+            let a = StationAnnotationFactory.create(station: s)
             annotations.append(a)
         }
         map.addAnnotations(annotations)
@@ -64,7 +63,7 @@ extension MainViewController: MKMapViewDelegate {
         if let tileOverlay = overlay as? MKTileOverlay {
             return MKTileOverlayRenderer(tileOverlay: tileOverlay)
         } else if let connectionOverlay = overlay as? ConnectionOverlay {
-            return ConnectionOverlayRenderer(connectionOverlay: connectionOverlay)
+            return ConnectionOverlayRendererFactory.create(connectionOverlay: connectionOverlay)
         } else {
             return MKOverlayRenderer(overlay: overlay)
         }
