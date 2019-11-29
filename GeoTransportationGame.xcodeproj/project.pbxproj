@@ -16,6 +16,7 @@
 		7E5742D72390CEEB00BAD750 /* StationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742D62390CEEB00BAD750 /* StationAnnotation.swift */; };
 		7E5742D92390DB6500BAD750 /* ConnectionOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742D82390DB6500BAD750 /* ConnectionOverlay.swift */; };
 		7E5742DC2390DDBD00BAD750 /* MKMapRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742DB2390DDBD00BAD750 /* MKMapRect+Extension.swift */; };
+		7E5742DE2390E3C900BAD750 /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742DD2390E3C900BAD750 /* CLLocationCoordinate2D+Extension.swift */; };
 		7E678138238F7EEF0026DA22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E678137238F7EEF0026DA22 /* AppDelegate.swift */; };
 		7E67813A238F7EEF0026DA22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E678139238F7EEF0026DA22 /* SceneDelegate.swift */; };
 		7E678141238F7EF20026DA22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E678140238F7EF20026DA22 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		7E5742D62390CEEB00BAD750 /* StationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotation.swift; sourceTree = "<group>"; };
 		7E5742D82390DB6500BAD750 /* ConnectionOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionOverlay.swift; sourceTree = "<group>"; };
 		7E5742DB2390DDBD00BAD750 /* MKMapRect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapRect+Extension.swift"; sourceTree = "<group>"; };
+		7E5742DD2390E3C900BAD750 /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
 		7E678134238F7EEF0026DA22 /* GeoTransportationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTransportationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E678137238F7EEF0026DA22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E678139238F7EEF0026DA22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				7E5742DB2390DDBD00BAD750 /* MKMapRect+Extension.swift */,
+				7E5742DD2390E3C900BAD750 /* CLLocationCoordinate2D+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				BACCC626A5A5FAD824EAB061 /* MainViewController.swift in Sources */,
 				7E67814E239049D30026DA22 /* MainViewController+Constraints.swift in Sources */,
 				7E5742D72390CEEB00BAD750 /* StationAnnotation.swift in Sources */,
+				7E5742DE2390E3C900BAD750 /* CLLocationCoordinate2D+Extension.swift in Sources */,
 				1EC1BA9A75ED49DC5B921033 /* MainModuleInput.swift in Sources */,
 				FD042937C62902BCE38A3F3D /* MainPresenter.swift in Sources */,
 				85C40F1AF22CFA0C0F177F61 /* MainInteractorInput.swift in Sources */,

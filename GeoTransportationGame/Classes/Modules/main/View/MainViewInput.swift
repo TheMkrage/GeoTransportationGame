@@ -15,4 +15,5 @@ protocol MainViewInput: class {
 
     func setupInitialState()
     func displayStations(stations: [Station])
+    func displayConnections(connections: [Connection])
 }

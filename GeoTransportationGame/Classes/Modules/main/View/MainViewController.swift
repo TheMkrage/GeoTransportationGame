@@ -54,7 +54,7 @@ class MainViewController: UIViewController, MainViewInput {
             let overlay = ConnectionOverlay(connection: c)
             overlays.append(overlay)
         }
-        map.addOverlays(overlays)
+        map.addOverlays(overlays, level: .aboveLabels)
     }
 }
 

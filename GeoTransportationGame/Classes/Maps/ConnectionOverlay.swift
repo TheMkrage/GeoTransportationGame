@@ -10,15 +10,18 @@ import UIKit
 import MapKit
 
 class ConnectionOverlay: NSObject, MKOverlay {
-    var coordinate: CLLocationCoordinate2D
-    
-    var boundingMapRect: MKMapRect
-    
-    init(connection: Connection) {
-        self.boundingMapRect = MKMapRect(coordinates: [
+    var coordinate: CLLocationCoordinate2D {
+        return connection.station1.coordinate
+    }
+    var boundingMapRect: MKMapRect {
+        return MKMapRect(coordinates: [
             connection.station1.coordinate,
             connection.station2.coordinate]
         )
-        self.coordinate = connection.station1.coordinate
+    }
+    var connection: Connection
+    
+    init(connection: Connection) {
+        self.connection = connection
     }
 }
