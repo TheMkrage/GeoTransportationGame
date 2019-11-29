@@ -14,9 +14,9 @@ struct StationAnnotationFactory {
         case .busStation:
             return BusStopAnnotation(station: station)
         case .trainStation:
-            return BusStopAnnotation(station: station)
+            return TrainStationAnnotation(station: station)
         case .airport:
-            return BusStopAnnotation(station: station)
+            return AirportAnnotation(station: station)
         }
     }
 }

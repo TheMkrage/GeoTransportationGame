@@ -14,9 +14,9 @@ struct ConnectionOverlayRendererFactory {
         case .busStation:
             return BusConnectionOverlayRenderer(connectionOverlay: connectionOverlay)
         case .trainStation:
-            return BusConnectionOverlayRenderer(connectionOverlay: connectionOverlay)
+            return TrainConnectionOverlayRenderer(connectionOverlay: connectionOverlay)
         case .airport:
-            return BusConnectionOverlayRenderer(connectionOverlay: connectionOverlay)
+            return AirportConnectionOverlayRenderer(connectionOverlay: connectionOverlay)
         }
     }
 
