@@ -8,12 +8,12 @@
 
 import UIKit
 import MapKit
-import MapKitGoogleStyler
+import CoreLocation
 
 class MainViewController: UIViewController, MainViewInput {
-
     var output: MainViewOutput!
-    var map: MKMapView = MKMapView()
+    var map = MapView()
+    let locationManager = CLLocationManager()
 
     // MARK: Life cycle
     override func viewDidLoad() {
@@ -26,39 +26,41 @@ class MainViewController: UIViewController, MainViewInput {
     func setupInitialState() {
         view.backgroundColor = .white
         view.addSubview(map)
+        
         setupConstraints()
         
+        locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+        }
         map.delegate = self
-        configureTileOverlay()
     }
     
-    
-    private func configureTileOverlay() {
-        // We first need to have the path of the overlay configuration JSON
-        guard let overlayFileURLString = Bundle.main.path(forResource: "overlay", ofType: "json") else {
-                return
-        }
-        let overlayFileURL = URL(fileURLWithPath: overlayFileURLString)
-        
-        // After that, you can create the tile overlay using MapKitGoogleStyler
-        guard let tileOverlay = try? MapKitGoogleStyler.buildOverlay(with: overlayFileURL) else {
-            return
-        }
-        
-        // And finally add it to your MKMapView
-        map.addOverlay(tileOverlay)
+    func displayStations(stations: [Station]) {
+        map.removeOverlays(map.overlays)
     }
 }
 
+
 extension MainViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        // This is the final step. This code can be copied and pasted into your project
-        // without thinking on it so much. It simply instantiates a MKTileOverlayRenderer
-        // for displaying the tile overlay.
         if let tileOverlay = overlay as? MKTileOverlay {
             return MKTileOverlayRenderer(tileOverlay: tileOverlay)
         } else {
             return MKOverlayRenderer(overlay: overlay)
         }
+    }
+}
+
+
+extension MainViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        
+        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let region = MKCoordinateRegion(center: locValue, span: span)
+        map.setRegion(region, animated: true)
     }
 }

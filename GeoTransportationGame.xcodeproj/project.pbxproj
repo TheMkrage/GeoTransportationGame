@@ -20,6 +20,8 @@
 		7E67814C239049700026DA22 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E67814B2390496F0026DA22 /* MapKit.framework */; };
 		7E67814E239049D30026DA22 /* MainViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67814D239049D30026DA22 /* MainViewController+Constraints.swift */; };
 		7E67815023906AB20026DA22 /* overlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E67814F23906AB20026DA22 /* overlay.json */; };
+		7E678153239077FC0026DA22 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E678152239077FC0026DA22 /* MapView.swift */; };
+		7E67815623907D270026DA22 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67815523907D270026DA22 /* Station.swift */; };
 		85C40F1AF22CFA0C0F177F61 /* MainInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88BA50A5A4DA117FBC78BB /* MainInteractorInput.swift */; };
 		A8325A793B68DB4E4FBA840C /* MainInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF52CE2BD4D25DA8B910956D /* MainInitializer.swift */; };
 		BACCC626A5A5FAD824EAB061 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52129BC5F6D8A124133E32C /* MainViewController.swift */; };
@@ -46,6 +48,8 @@
 		7E67814B2390496F0026DA22 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7E67814D239049D30026DA22 /* MainViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MainViewController+Constraints.swift"; path = "GeoTransportationGame/Classes/Modules/main/View/MainViewController+Constraints.swift"; sourceTree = SOURCE_ROOT; };
 		7E67814F23906AB20026DA22 /* overlay.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = overlay.json; sourceTree = "<group>"; };
+		7E678152239077FC0026DA22 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapView.swift; path = GeoTransportationGame/Classes/Modules/main/View/Subviews/MapView.swift; sourceTree = SOURCE_ROOT; };
+		7E67815523907D270026DA22 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		ADCB0FEC320182370B4BD463 /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
 		AF52CE2BD4D25DA8B910956D /* MainInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInitializer.swift; sourceTree = "<group>"; };
 		CC01135D184EC2FEA9342DBC /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
@@ -158,6 +162,22 @@
 			path = GeoTransportationGame;
 			sourceTree = "<group>";
 		};
+		7E678151239077E80026DA22 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				7E678152239077FC0026DA22 /* MapView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		7E67815423907D180026DA22 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7E67815523907D270026DA22 /* Station.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		7FD49022163C381B3CDB2594 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +199,7 @@
 		8E57239E02B85D95BF1E0C36 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7E678151239077E80026DA22 /* Subviews */,
 				68F1AEAA34A02E32DEBE651D /* MainViewInput.swift */,
 				ADCB0FEC320182370B4BD463 /* MainViewOutput.swift */,
 				F52129BC5F6D8A124133E32C /* MainViewController.swift */,
@@ -190,6 +211,7 @@
 		91EE4275DFAFA677A151B3C7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7E67815423907D180026DA22 /* Entity */,
 				169C863FC64F48AC34B3FF6D /* Modules */,
 			);
 			path = Classes;
@@ -312,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E678138238F7EEF0026DA22 /* AppDelegate.swift in Sources */,
+				7E678153239077FC0026DA22 /* MapView.swift in Sources */,
 				7E67813A238F7EEF0026DA22 /* SceneDelegate.swift in Sources */,
 				7C4B7AF3B2805549564C95F2 /* MainViewInput.swift in Sources */,
 				D3A0C45227EAADC169F8DDDF /* MainViewOutput.swift in Sources */,
@@ -325,6 +348,7 @@
 				68CC641B13FA8D056FE7F224 /* MainRouterInput.swift in Sources */,
 				3657E753F373D630421CB2B3 /* MainRouter.swift in Sources */,
 				444C9AAFEB7D82B162A289F5 /* MainConfigurator.swift in Sources */,
+				7E67815623907D270026DA22 /* Station.swift in Sources */,
 				A8325A793B68DB4E4FBA840C /* MainInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

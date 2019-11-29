@@ -13,6 +13,7 @@ class MainPresenter: MainModuleInput, MainViewOutput, MainInteractorOutput {
     var router: MainRouterInput!
 
     func viewIsReady() {
-
+        let stations = [Station]()
+        //stations.append()
     }
 }

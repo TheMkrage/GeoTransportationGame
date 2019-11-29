@@ -14,4 +14,5 @@ protocol MainViewInput: class {
     */
 
     func setupInitialState()
+    func displayStations(stations: [Station])
 }
