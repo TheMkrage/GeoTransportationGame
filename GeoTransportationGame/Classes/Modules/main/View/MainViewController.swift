@@ -50,7 +50,7 @@ class MainViewController: UIViewController, MainViewInput {
     func displayConnections(connections: [Connection]) {
         var overlays = [MKOverlay]()
         for c in connections {
-            let overlay = ConnectionOverlay(connection: c)
+            let overlay = ConnectionOverlayFactory.create(connection: c)
             overlays.append(overlay)
         }
         map.addOverlays(overlays, level: .aboveLabels)
@@ -81,7 +81,7 @@ extension MainViewController: MKMapViewDelegate {
         }
 
         let stationAnnotation = annotation as! StationAnnotation
-        annotationView?.image = UIImage(named: stationAnnotation.type.annotationImageName)
+        annotationView?.image = UIImage(named: stationAnnotation.station.type.annotationImageName)
         annotationView?.transform = CGAffineTransform(scaleX: 0.4, y: 0.4)
 
         return annotationView

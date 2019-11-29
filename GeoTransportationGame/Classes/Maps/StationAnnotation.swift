@@ -13,6 +13,7 @@ class StationAnnotation: MKPointAnnotation {
     
     init(station: Station) {
         self.station = station
+        super.init()
         self.coordinate = station.coordinate
     }
 }

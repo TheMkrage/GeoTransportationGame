@@ -25,6 +25,10 @@
 		7E5742EC23919E9400BAD750 /* AirportAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742EB23919E9400BAD750 /* AirportAnnotation.swift */; };
 		7E5742EE23919EB400BAD750 /* TrainConnectionOverlayRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742ED23919EB400BAD750 /* TrainConnectionOverlayRenderer.swift */; };
 		7E5742F023919EC600BAD750 /* AirportConnectionOverlayRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742EF23919EC600BAD750 /* AirportConnectionOverlayRenderer.swift */; };
+		7E5742F32391B43800BAD750 /* BusConnectionOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742F22391B43800BAD750 /* BusConnectionOverlay.swift */; };
+		7E5742F52391B46900BAD750 /* TrainConnectionOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742F42391B46900BAD750 /* TrainConnectionOverlay.swift */; };
+		7E5742F72391B47400BAD750 /* AirportConnectionOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742F62391B47400BAD750 /* AirportConnectionOverlay.swift */; };
+		7E5742F92391B48C00BAD750 /* ConnectionOverlayFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5742F82391B48C00BAD750 /* ConnectionOverlayFactory.swift */; };
 		7E678138238F7EEF0026DA22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E678137238F7EEF0026DA22 /* AppDelegate.swift */; };
 		7E67813A238F7EEF0026DA22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E678139238F7EEF0026DA22 /* SceneDelegate.swift */; };
 		7E678141238F7EF20026DA22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E678140238F7EF20026DA22 /* Assets.xcassets */; };
@@ -65,6 +69,10 @@
 		7E5742EB23919E9400BAD750 /* AirportAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportAnnotation.swift; sourceTree = "<group>"; };
 		7E5742ED23919EB400BAD750 /* TrainConnectionOverlayRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainConnectionOverlayRenderer.swift; sourceTree = "<group>"; };
 		7E5742EF23919EC600BAD750 /* AirportConnectionOverlayRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportConnectionOverlayRenderer.swift; sourceTree = "<group>"; };
+		7E5742F22391B43800BAD750 /* BusConnectionOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusConnectionOverlay.swift; sourceTree = "<group>"; };
+		7E5742F42391B46900BAD750 /* TrainConnectionOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainConnectionOverlay.swift; sourceTree = "<group>"; };
+		7E5742F62391B47400BAD750 /* AirportConnectionOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportConnectionOverlay.swift; sourceTree = "<group>"; };
+		7E5742F82391B48C00BAD750 /* ConnectionOverlayFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionOverlayFactory.swift; sourceTree = "<group>"; };
 		7E678134238F7EEF0026DA22 /* GeoTransportationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTransportationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E678137238F7EEF0026DA22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E678139238F7EEF0026DA22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +197,17 @@
 			path = StationAnnotations;
 			sourceTree = "<group>";
 		};
+		7E5742F12391B41500BAD750 /* ConnectionOverlays */ = {
+			isa = PBXGroup;
+			children = (
+				7E5742F22391B43800BAD750 /* BusConnectionOverlay.swift */,
+				7E5742F42391B46900BAD750 /* TrainConnectionOverlay.swift */,
+				7E5742F62391B47400BAD750 /* AirportConnectionOverlay.swift */,
+				7E5742F82391B48C00BAD750 /* ConnectionOverlayFactory.swift */,
+			);
+			path = ConnectionOverlays;
+			sourceTree = "<group>";
+		};
 		7E67812B238F7EEF0026DA22 = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +266,7 @@
 				7E6781572390BE590026DA22 /* ConnectionOverlayRenderer.swift */,
 				7E5742DF2390F72A00BAD750 /* ConnectionOverlayRenderers */,
 				7E5742D82390DB6500BAD750 /* ConnectionOverlay.swift */,
+				7E5742F12391B41500BAD750 /* ConnectionOverlays */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -407,7 +427,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5742F92391B48C00BAD750 /* ConnectionOverlayFactory.swift in Sources */,
 				7E678138238F7EEF0026DA22 /* AppDelegate.swift in Sources */,
+				7E5742F32391B43800BAD750 /* BusConnectionOverlay.swift in Sources */,
 				7E6781582390BE5A0026DA22 /* ConnectionOverlayRenderer.swift in Sources */,
 				7E5742EA23919E8100BAD750 /* TrainStationAnnotation.swift in Sources */,
 				7E5742E423919AD500BAD750 /* BusStopAnnotation.swift in Sources */,
@@ -424,6 +446,7 @@
 				FD042937C62902BCE38A3F3D /* MainPresenter.swift in Sources */,
 				85C40F1AF22CFA0C0F177F61 /* MainInteractorInput.swift in Sources */,
 				7E5742DC2390DDBD00BAD750 /* MKMapRect+Extension.swift in Sources */,
+				7E5742F72391B47400BAD750 /* AirportConnectionOverlay.swift in Sources */,
 				7E951A892390C671004BEB6C /* Connection.swift in Sources */,
 				7E5742EC23919E9400BAD750 /* AirportAnnotation.swift in Sources */,
 				F973DC241917EEFFE60DF133 /* MainInteractorOutput.swift in Sources */,
@@ -438,6 +461,7 @@
 				7E5742E123919A8600BAD750 /* BusConnectionOverlayRenderer.swift in Sources */,
 				7E5742F023919EC600BAD750 /* AirportConnectionOverlayRenderer.swift in Sources */,
 				A8325A793B68DB4E4FBA840C /* MainInitializer.swift in Sources */,
+				7E5742F52391B46900BAD750 /* TrainConnectionOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
