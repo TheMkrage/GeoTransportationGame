@@ -13,7 +13,9 @@ class MainPresenter: MainModuleInput, MainViewOutput, MainInteractorOutput {
     var router: MainRouterInput!
 
     func viewIsReady() {
-        let stations = [Station]()
-        //stations.append()
+        var stations = [Station]()
+        stations.append(Station(id: 0, ownerName: "MKrager", ownerId: 0, stationName: "Krager Station", type: .busStation, lat: 33.699910, long: -118.023030))
+        stations.append(Station(id: 1, ownerName: "MKrager", ownerId: 0, stationName: "Krager Station 2", type: .busStation, lat: 33.6990, long: -118.023033))
+        view.displayStations(stations: stations)
     }
 }
